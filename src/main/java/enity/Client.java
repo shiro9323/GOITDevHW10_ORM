@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class Client {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column

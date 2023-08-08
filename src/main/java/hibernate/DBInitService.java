@@ -18,7 +18,7 @@ public class DBInitService {
             ClassLoader classLoader = getClass().getClassLoader();
             properties.load(classLoader.getResourceAsStream("hibernate.properties"));
             URL = properties.getProperty("hibernate.connection.url");
-            LOGIN = properties.getProperty("hibernate.connection.login");
+            LOGIN = properties.getProperty("hibernate.connection.username");
             PASSWORD = properties.getProperty("hibernate.connection.password");
 
             dataSource.setURL(URL);
